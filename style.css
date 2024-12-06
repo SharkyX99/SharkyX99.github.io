@@ -293,3 +293,19 @@ body {
 .image-content {
     margin-left: 20px; /* เพิ่มระยะห่างระหว่างรูปกับข้อความถ้าต้องการ */
 }
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px; /* Gap between buttons */
+    justify-items: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Use 1 column on mobile */
+    }
+}
+
