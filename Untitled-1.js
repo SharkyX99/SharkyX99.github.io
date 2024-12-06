@@ -12,7 +12,11 @@ function closeModal() {
     var modal = document.getElementById("myModal");
     modal.style.display = "none";
 }
-if (window.innerWidth <= 768) {
-    document.body.style.width = "1024px";  // ตั้งค่าความกว้างให้เท่ากับ 1024px
-    document.body.style.margin = "0 auto";  // จัดตำแหน่งให้อยู่ตรงกลาง
+function openModal(imageSrc) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var caption = document.getElementById("caption");
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+    caption.innerHTML = "Image caption here";  // คุณสามารถปรับ caption ตามต้องการ
 }
