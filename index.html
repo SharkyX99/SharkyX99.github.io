@@ -12,24 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Anta&family=Noto+Sans+Thai:wght@457&display=swap" rel="stylesheet">
     <title>Resume</title>
     <style>
-        /* ใช้ Flexbox เพื่อจัดเรียงในแนวตั้ง */
         .container {
             display: flex;
-            flex-direction: column; /* จัดเรียงแนวตั้ง */
-            align-items: center; /* จัดตำแหน่งให้แนวนอนอยู่ตรงกลาง */
+            flex-direction: column; 
+            align-items: center; 
         }
-
-        /* ให้ข้อความแสดงในแนวตั้ง */
         .text-content {
             text-align: center;
-            margin-bottom: 1px; /* ระยะห่างระหว่างข้อความ */
+            margin-bottom: 1px;
         }
 
-        /* จัดรูปภาพให้อยู่ในแนวตั้ง */
+
         .image-content img {
-            width: 450px; /* ขนาดรูป */
-            height: 750px; /* ขนาดรูป */
-            margin-bottom: 1px; /* ระยะห่างจากรูป */
+            width: 450px;
+            height: 750px;
+            margin-bottom: 1px; 
         }
     </style>
 </head>
@@ -122,35 +119,27 @@
         <hr>
     </div>
 
-    <!-- Modal Structure -->
     <div id="myModal" class="modal" style="display: none;">
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
-
-    <!-- JavaScript -->
     <script src="Untitled-1.js"></script>
-    <!-- Modal Structure -->
 <div id="myModal" class="modal" style="display: none;">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="img01">
     <div id="caption"></div>
 </div>
-
 </body>
 <script>
-    // ฟังก์ชันเปิดโมดัล
     function openModal(imageSrc) {
         var modal = document.getElementById("myModal");
         var modalImg = document.getElementById("img01");
         var caption = document.getElementById("caption");
         modal.style.display = "block";
         modalImg.src = imageSrc;
-        caption.innerHTML = "Image caption here";  // คุณสามารถปรับ caption ตามต้องการ
+        caption.innerHTML = "Image caption here"; 
     }
-
-    // ฟังก์ชันปิดโมดัล
     function closeModal() {
         var modal = document.getElementById("myModal");
         modal.style.display = "none";
