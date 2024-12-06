@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color.css"> 
     <link rel="stylesheet" href="spacile.css">
@@ -11,8 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anta&family=Noto+Sans+Thai:wght@457&display=swap" rel="stylesheet">
     <title>Resume</title>
+    <style>
+        /* ใช้ Flexbox เพื่อจัดเรียงในแนวตั้ง */
+        .container {
+            display: flex;
+            flex-direction: column; /* จัดเรียงแนวตั้ง */
+            align-items: center; /* จัดตำแหน่งให้แนวนอนอยู่ตรงกลาง */
+        }
+
+        /* ให้ข้อความแสดงในแนวตั้ง */
+        .text-content {
+            text-align: center;
+            margin-bottom: 1px; /* ระยะห่างระหว่างข้อความ */
+        }
+
+        /* จัดรูปภาพให้อยู่ในแนวตั้ง */
+        .image-content img {
+            width: 450px; /* ขนาดรูป */
+            height: 750px; /* ขนาดรูป */
+            margin-bottom: 1px; /* ระยะห่างจากรูป */
+        }
+    </style>
 </head>
 <body>
+    
     <div class="container">
         <div class="text-content">
             <div class="content-center ibm-plex-sans-thai-bold">
@@ -51,7 +73,7 @@
     <div class="content-center anta-regular">   
         <span><font size="38" class="hello">Other Results</font></span>
     </div>
-    <iframe src="https://sharkyx49.github.io/" width="50%" height="600px"></iframe>
+    <iframe src="https://sharkyx49.github.io/" width="100%" height="600px"></iframe>
     <br><br>
     <div class="content-center anta-regular">   
         <span><font size="38" class="hello">Certificate</font></span>
@@ -109,5 +131,30 @@
 
     <!-- JavaScript -->
     <script src="Untitled-1.js"></script>
+    <!-- Modal Structure -->
+<div id="myModal" class="modal" style="display: none;">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+</body>
+<script>
+    // ฟังก์ชันเปิดโมดัล
+    function openModal(imageSrc) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var caption = document.getElementById("caption");
+        modal.style.display = "block";
+        modalImg.src = imageSrc;
+        caption.innerHTML = "Image caption here";  // คุณสามารถปรับ caption ตามต้องการ
+    }
+
+    // ฟังก์ชันปิดโมดัล
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+</script>
 </body>
 </html>
