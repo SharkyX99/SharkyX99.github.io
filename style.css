@@ -243,6 +243,12 @@ body {
 .head-contact {
     font-size: 55px;
 }
+.E-mail {
+    font-size: 25px;
+}
+.Phone-Num {
+    font-size: 25px;
+}
 .button1 {
     background-image: url('certificate/Advanced\ ComPgram1.jpg');
 }
@@ -287,25 +293,25 @@ body {
 .text-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* จัดตัวหนังสือไปทางซ้าย */
+    align-items: flex-start; 
 }
 
 .image-content {
-    margin-left: 20px; /* เพิ่มระยะห่างระหว่างรูปกับข้อความถ้าต้องการ */
+    margin-left: 20px; 
 }
 
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-gap: 10px; /* Gap between buttons */
-    justify-items: center; /* Center buttons horizontally */
-    align-items: center; /* Center buttons vertically */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;
+    justify-items: center; 
+    align-items: center; 
 }
 
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Use 1 column on mobile */
+        grid-template-columns: 1fr; 
     }
 }
 
