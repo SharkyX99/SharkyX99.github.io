@@ -1,0 +1,65 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #fffef5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 30px 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #6d4c41;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #388e3c;
+  }
+  
+  .contact {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed #aaa;
+  }
+  
+  .qr {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .qr img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    ul {
+      padding-left: 20px;
+    }
+  }
+  
