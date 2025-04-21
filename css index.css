@@ -1,0 +1,39 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #fffef5;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.8;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #6d4c41;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #388e3c;
+  }
+  
+  .contact {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px dashed #aaa;
+  }
+  
+  .qr {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
